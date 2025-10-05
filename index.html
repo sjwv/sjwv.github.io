@@ -7,17 +7,36 @@
     body { font-family: monospace; background: #fff; color: #222; }
     a { color: #0066cc; text-decoration: underline; }
     li { margin: 0.5em 0; }
+    details { margin-bottom: 1em; }
+    summary { cursor: pointer; font-weight: bold; }
   </style>
 </head>
 <body>
   <h1></h1>
-  <ul>
-    <li><a href="https://www.baidu.com" target="_blank">百度</a></li>
-    <li><a href="https://www.google.com" target="_blank">Google</a></li>
-    <li><a href="https://github.com" target="_blank">GitHub</a></li>
-    <li><a href="https://www.zhihu.com" target="_blank">知乎</a></li>
-    <li><a href="https://www.bilibili.com" target="_blank">B站</a></li>
-    <!-- 可继续添加 -->
-  </ul>
+  <details open>
+    <summary>搜索引擎</summary>
+    <ul>
+      <li><a href="https://www.baidu.com" target="_blank">百度</a></li>
+      <li><a href="https://www.google.com" target="_blank">Google</a></li>
+    </ul>
+  </details>
+  <details>
+    <summary>开发者平台</summary>
+    <ul>
+      <li><a href="https://github.com" target="_blank">GitHub</a></li>
+    </ul>
+  </details>
+  <details>
+    <summary>社区论坛</summary>
+    <ul>
+      <li><a href="https://www.zhihu.com" target="_blank">知乎</a></li>
+    </ul>
+  </details>
+  <details>
+    <summary>视频媒体</summary>
+    <ul>
+      <li><a href="https://www.bilibili.com" target="_blank">B站</a></li>
+    </ul>
+  </details>
 </body>
 </html>
